@@ -227,8 +227,8 @@ while (window.isOpen()) {
         std::shuffle(array.begin(), array.end(), gen); // Shuffle the array
         binarySort(array, window, speed); // Pass speed to sorting method
         isVisualizationRunning = false;
-        isBubbleSortRunning = false;
-        isQuickSortRunning = true;
+        isBubbleSortRunning = true;
+        isQuickSortRunning = false;
         isMergeSortRunning = false;
         std::this_thread::sleep_for(std::chrono::seconds(3)); // Add 3 seconds delay
     } else if (isBubbleSortRunning) {
